@@ -5,11 +5,7 @@
 #include "AbilitySystem/Abilities/KnightGameplayAbility.h"
 #include "AbilitySystem/KnightAbilitySystemComponent.h"
 #include "KnightDebugHelper.h"
-bool FKnightHeroAbilitySet::IsValid() const
-{
 
-	return InputTag.IsValid() && AbilityToGrant;
-}
 
 void UDataAsset_HeroStartUpData::GiveToAbilitySystemComponent(UKnightAbilitySystemComponent* InASCToGive, int32 ApplyLevel)
 {

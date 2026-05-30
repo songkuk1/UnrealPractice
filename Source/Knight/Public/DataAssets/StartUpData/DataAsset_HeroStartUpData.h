@@ -4,22 +4,9 @@
 
 #include "CoreMinimal.h"
 #include "DataAssets/StartUpData/DataAsset_StartUpDataBase.h"
-#include "GameplayTagContainer.h"
+#include "KnightTypes/KnightStructTypes.h"
 #include "DataAsset_HeroStartUpData.generated.h"
 
-USTRUCT(BlueprintType)
-struct FKnightHeroAbilitySet
-{
-	GENERATED_BODY()
-
-	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, meta = (Categories = "InputTag"))
-	FGameplayTag InputTag;
-
-	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, meta = (Categories = "InputTag"))
-	TSubclassOf<UKnightGameplayAbility> AbilityToGrant;
-
-	bool IsValid() const;
-};
 
 /**
  * 
