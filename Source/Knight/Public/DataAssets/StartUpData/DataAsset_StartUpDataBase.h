@@ -8,6 +8,7 @@
 
 class UKnightGameplayAbility;
 class UKnightAbilitySystemComponent;
+class UGameplayEffect;
 /**
  * 
  */
@@ -28,6 +29,9 @@ protected:
 
 	UPROPERTY(EditDefaultsOnly, Category = "StartUpData")
 	TArray<TSubclassOf< UKnightGameplayAbility>> ReactiveAbilities;
+
+	UPROPERTY(EditDefaultsOnly, Category = "StartUpData")
+	TArray<TSubclassOf< UGameplayEffect>> StartUpGameplayEffects;
 
 	void GrantAbilities(const TArray<TSubclassOf< UKnightGameplayAbility>>& InAbilityesToGive, UKnightAbilitySystemComponent* InASCToGive, int32 ApplyLevel = 1);
 
